@@ -67,7 +67,7 @@
       function informacion(){
 
       var cargar = sessionStorage.Usuario
-       fetch(`http://localhost:3000/Datosper/${cargar}`)
+       fetch(`https://proyecto2ipc1.herokuapp.com//Datosper/${cargar}`)
                   .then(response => response.json())
                   .catch(error => {
                     console.log(error)
@@ -93,7 +93,7 @@
             //nombre.innerHTML = `Bienvenido: </br> ${iniciado}`
 
             var tabla = document.querySelector('#CuerpoUsuarios')
-            fetch('http://localhost:3000/Datos')
+            fetch('https://proyecto2ipc1.herokuapp.com//Datos')
             .then(response => response.json())
             .catch(error => {
                 console.log(error)
@@ -229,7 +229,7 @@
       var contenido = document.querySelector('#Cuerpo')
       contenido.innerHTML = ""
 
-            fetch('http://localhost:3000/c')
+            fetch('https://proyecto2ipc1.herokuapp.com//c')
             .then(response => response.json())
 
             .catch(error => {

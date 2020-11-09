@@ -232,7 +232,7 @@ function Buscar(){
 }
 console.log(objeto)
 
-fetch('http://localhost:3000/Buscar', {
+fetch('https://proyecto2ipc1.herokuapp.com//Buscar', {
 
 method: 'POST',
 body: JSON.stringify(objeto),
@@ -318,7 +318,7 @@ if(response.message == "Failed"){
 
 
         var tabla = document.querySelector('#CuerpoUsuarios')
-        fetch('http://localhost:3000/Datos')
+        fetch('https://proyecto2ipc1.herokuapp.com//Datos')
         .then(response => response.json())
         .catch(error => {
             console.log(error)
@@ -411,7 +411,7 @@ document.getElementById("admins").style.display ="none";
   }
   console.log(objeto)
 
-  fetch('http://localhost:3000/Datosadmin', {
+  fetch('https://proyecto2ipc1.herokuapp.com//Datosadmin', {
 
   method: 'POST',
   body: JSON.stringify(objeto),
@@ -487,7 +487,7 @@ function inicio(){
       var cargar = sessionStorage.Usuario
 
 
-     fetch(`http://localhost:3000/Datosper/${cargar}`)
+     fetch(`https://proyecto2ipc1.herokuapp.com//Datosper/${cargar}`)
               .then(response => response.json())
               .catch(error => {
                 console.log(error)

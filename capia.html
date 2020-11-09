@@ -135,7 +135,7 @@ function Buscar(){
 }
 console.log(objeto)
 
-fetch('http://localhost:3000/Buscar', {
+fetch('https://proyecto2ipc1.herokuapp.com//Buscar', {
 
 method: 'POST',
 body: JSON.stringify(objeto),
@@ -212,7 +212,7 @@ if(response.message == "Failed"){
         var iniciado = sessionStorage.Usuario
         nombre.innerHTML = `Bienvenido: </br> ${iniciado}`
         var tabla = document.querySelector('#CuerpoUsuarios')
-        fetch('http://localhost:3000/Datos')
+        fetch('https://proyecto2ipc1.herokuapp.com//Datos')
         .then(response => response.json())
         .catch(error => {
             console.log(error)

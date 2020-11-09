@@ -130,7 +130,7 @@
          var cargar = sessionStorage.artista
 
 
-         fetch(`http://localhost:3000/c2/${cargar}`)
+         fetch(`https://proyecto2ipc1.herokuapp.com//c2/${cargar}`)
                   .then(response => response.json())
                   .catch(error => {
                     console.log(error)
@@ -183,7 +183,7 @@
       }
       console.log(objeto)
 
-      fetch('http://localhost:3000/comentario', {
+      fetch('https://proyecto2ipc1.herokuapp.com//comentario', {
 
       method: 'POST',
       body: JSON.stringify(objeto),
@@ -225,7 +225,7 @@
     var cargar = sessionStorage.Usuario
 
 
-       fetch(`http://localhost:3000/Datosper/${cargar}`)
+       fetch(`https://proyecto2ipc1.herokuapp.com//Datosper/${cargar}`)
                 .then(response => response.json())
                 .catch(error => {
                   console.log(error)
@@ -261,7 +261,7 @@
         var cargar = sessionStorage.artista
 
 
-           fetch(`http://localhost:3000/comentario/${cargar}`)
+           fetch(`https://proyecto2ipc1.herokuapp.com//comentario/${cargar}`)
                     .then(response => response.json())
                     .catch(error => {
                       console.log(error)

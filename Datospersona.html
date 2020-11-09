@@ -37,7 +37,7 @@
         var iniciado = sessionStorage.Usuario
         nombre.innerHTML = `Bienvenido: </br> ${iniciado}`
         var tabla = document.querySelector('#CuerpoUsuarios')
-        fetch('http://localhost:3000/Datos')
+        fetch('https://proyecto2ipc1.herokuapp.com//Datos')
         .then(response => response.json())
         .catch(error => {
             console.log(error)

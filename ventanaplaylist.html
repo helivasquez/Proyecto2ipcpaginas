@@ -41,7 +41,7 @@
         function CargarInfo(){
           var contenido = document.querySelector('#Cuerpo')
           contenido.innerHTML = ""
-            fetch('http://localhost:3000/c4')
+            fetch('https://proyecto2ipc1.herokuapp.com//c4')
             .then(response => response.json())
             .catch(error => {
                 console.log(error)
